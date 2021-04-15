@@ -1,6 +1,6 @@
 import express, {json} from 'express'; 
 import morgan from 'morgan';
-import errorhandler from 'errorhandler'; 
+//import errorhandler from 'errorhandler'; 
 //error handler (¿?)
 
 //Import routing project modules 
