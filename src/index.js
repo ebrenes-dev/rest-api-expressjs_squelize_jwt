@@ -1,5 +1,7 @@
 import app from './app.js';
 import util from 'util';
+import dotenv from 'dotenv'; 
+dotenv.config();
 
 async function runServer(port)
 {
@@ -12,7 +14,7 @@ async function runServer(port)
 
 function main()
 {
-    const SERVER_PORT = 8000;
+    const SERVER_PORT = process.env.PORT;
 
     const runServer = port => new Promise(callBack => app.listen(port, callBack));
     runServer(SERVER_PORT)

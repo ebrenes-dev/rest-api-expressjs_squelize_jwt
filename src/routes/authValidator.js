@@ -21,7 +21,7 @@ router.use((req, res, next) => {
 		});
     } 
 	else {
-		res.send({ 
+		res.status(StatusCodes.FORBIDDEN).json({ 
 			message: 'Request without token or valid headers'
 		});
     }
