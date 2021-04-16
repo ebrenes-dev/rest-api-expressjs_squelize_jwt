@@ -34,6 +34,6 @@ app.use(json()); //It enables the API for receiving JSON objects into request fr
 //routes
 app.use('/api/project', cors(corsOptions), authValidator, projectRoutes);
 app.use('/api/task', cors(corsOptions), authValidator, taskRoutes);
-app.use('/api/authenticate/', cors(corsOptions), authorizer);
+app.use('/api/authenticate', cors(corsOptions), authorizer);
 
 export default app;
